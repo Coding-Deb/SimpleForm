@@ -8,7 +8,10 @@ mongoose.connect('mongodb://localhost:27017/form',()=>{
     console.log('Database Connected');
 })
 
+//JSON Connect
 app.use(express.json())
+
+//Routes Connect
 app.use('/api',routes)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

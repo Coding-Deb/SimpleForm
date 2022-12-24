@@ -9,7 +9,6 @@ export default function App() {
   const [password, setpassword] = useState('')
 
   const handleSubmit = (e) => {
-    e.preventDefault();
 
     const login = {
       name, email, password
